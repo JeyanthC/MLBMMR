@@ -1,0 +1,47 @@
+<Screen2@Screen>:
+    name: 'screen2c'
+
+    BoxLayout:
+        orientation: "vertical"
+
+
+
+    FloatLayout:
+        Button:
+            text: "Play"
+            pos_hint: {"x":0.45,"y":0.70}
+            size_hint: 0.1,0.1
+            on_press: app.play_sound()
+
+
+        Button:
+            text: "Stop"
+            pos_hint: {"x":0.45,"y":0.40}
+            size_hint: 0.1,0.1
+            on_press:app.stop_sound()
+
+
+        Button:
+            text: "Prev"
+            pos_hint: {"x":0.30,"y":0.55}
+            size_hint: 0.1,0.1
+            on_press: app.play_sound() 
+
+        Button:
+            text: "Next"
+            pos_hint: {"x":0.60,"y":0.55}
+            size_hint: 0.1,0.1
+            on_press: app.play_sound()
+
+
+        Button:
+            text: "<=="
+            pos_hint: {"x":0.02,"y":0.10}
+            on_press: app.root.current = "screen1c"
+            size_hint: 0.07,0.07
+
+
+
+
+        
+
