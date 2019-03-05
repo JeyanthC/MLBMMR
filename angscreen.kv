@@ -1,0 +1,53 @@
+<Screen4@Screen>:
+    name: 'angscreen'
+
+    BoxLayout:
+        orientation: "vertical"
+
+
+
+    FloatLayout:
+        Button:
+            text: "Play"
+            pos_hint: {"x":0.45,"y":0.70}
+            color:0.8,0.0078,0.0078,1
+            size_hint: 0.1,0.1
+            
+
+
+        Button:
+            text: "Stop"
+            pos_hint: {"x":0.45,"y":0.40}
+            color:0.8,0.0078,0.0078,1
+            size_hint: 0.1,0.1
+           
+
+
+        Button:
+            text: "Prev"
+            pos_hint: {"x":0.30,"y":0.55}
+            color:0.8,0.0078,0.0078,1
+            size_hint: 0.1,0.1
+            
+
+        Button:
+            text: "Next"
+            pos_hint: {"x":0.60,"y":0.55}
+            color:0.8,0.0078,0.0078,1
+            size_hint: 0.1,0.1
+            
+
+
+        Button:
+            text: "<=="
+            pos_hint: {"x":0.02,"y":0.10}
+            color:0.988,0.988,0.988,1
+            on_press: app.root.current = "mainload"
+            size_hint: 0.07,0.07
+
+        Button:
+            font_size:30
+            color:0.8,0.0078,0.0078,1
+            size_hint: 0.34,0.2
+            text: "Angry Mood"
+            pos_hint: {"x":0.33,"y":0.83}

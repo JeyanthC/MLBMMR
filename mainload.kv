@@ -1,0 +1,57 @@
+<Screen1@Screen>:
+    name: 'mainload'
+
+    BoxLayout:
+        orientation: "vertical"
+
+        Label:
+            
+        Button:
+            text: "<=="
+            on_press: app.root.current = "main_screen"
+            size_hint: 0.09,0.05
+            pos_hint: {"x":0.15,"y":0.20}
+
+
+    FloatLayout:
+        Button:
+            font_size:20
+            color:0.952,0.52,0.952,1
+            size_hint: 0.09,0.09
+            text: "Happy"
+            on_press: app.root.current = "happyscreen"
+            pos_hint: {"x":0.08,"y":0.5}
+
+        Button:
+            font_size:20
+            color:0.952,0.52,0.952,1
+            size_hint: 0.09,0.09
+            text: "Sad"
+            on_press: app.root.current = "sadscreen"
+            pos_hint: {"x":0.33,"y":0.5}
+
+        Button:
+            font_size:20
+            color:0.952,0.52,0.952,1
+            size_hint: 0.09,0.09
+            text: "Angry"
+            on_press: app.root.current = "angscreen"
+            pos_hint: {"x":0.58,"y":0.5}
+
+        Button:
+            font_size:20
+            color:0.952,0.52,0.952,1
+            size_hint: 0.09,0.10
+            text: "Relaxed"
+            on_press: app.root.current = "relscreen"
+            pos_hint: {"x":0.83,"y":0.5}
+
+        Button:
+            font_size:30
+            color:0.952,0.52,0.952,1
+            size_hint: 0.34,0.2
+            text: "Mood Music Player"
+            pos_hint: {"x":0.33,"y":0.83}
+
+
+

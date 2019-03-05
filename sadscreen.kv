@@ -1,0 +1,58 @@
+<Screen3@Screen>:
+    name: 'sadscreen'
+
+    BoxLayout:
+        orientation: "vertical"
+
+
+
+    FloatLayout:
+        Button:
+            text: "Play"
+            pos_hint: {"x":0.45,"y":0.70}
+            color:0.756,0.282,0.341,1
+            size_hint: 0.1,0.1
+            on_press: app.play_current()
+            
+
+
+        Button:
+            text: "Stop"
+            pos_hint: {"x":0.45,"y":0.40}
+            color:0.756,0.282,0.341,1
+            size_hint: 0.1,0.1
+            on_press: app.stop_sound()
+           
+
+
+        Button:
+            text: "Prev"
+            pos_hint: {"x":0.30,"y":0.55}
+            color:0.756,0.282,0.341,1
+            size_hint: 0.1,0.1
+            on_press: app.play_prev()
+            
+
+        Button:
+            text: "Next"
+            pos_hint: {"x":0.60,"y":0.55}
+            color:0.756,0.282,0.341,1
+            size_hint: 0.1,0.1
+            on_press: app.play_next()
+
+            
+
+
+        Button:
+            text: "<=="
+            pos_hint: {"x":0.02,"y":0.10}
+            color:0.988,0.988,0.988,1
+            on_press: app.root.current = "mainload"
+            size_hint: 0.07,0.07
+
+        Button:
+            font_size:30
+            color:0.756,0.282,0.341,1
+            size_hint: 0.34,0.2
+            text: "Sad Mood"
+            pos_hint: {"x":0.33,"y":0.83}

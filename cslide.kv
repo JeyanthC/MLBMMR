@@ -1,0 +1,42 @@
+#:include mainload.kv
+#:include happyscreen.kv
+#:include sadscreen.kv
+#:include angscreen.kv
+#:include relscreen.kv
+
+#:import NoTransition kivy.uix.screenmanager.NoTransition
+
+
+ScreenManager:
+    transition: NoTransition()
+
+
+    Screen:
+        name: "main_screen"
+
+        BoxLayout:
+            orientation: "vertical"
+
+            Label:
+                text: "Music Player"
+            Button:
+                text: "==>"
+                on_press: app.root.current = "mainload"
+                size_hint: 0.09,0.05
+                color:0.988,0.988,0.988,1
+                pos_hint: {"x":0.85,"y":0.05}
+           
+
+    Screen1:
+
+
+    Screen2:
+
+
+    Screen3:
+
+
+    Screen4:
+
+
+    Screen5:
